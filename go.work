@@ -1,0 +1,11 @@
+go 1.19
+
+use (
+	./iam
+	./component
+	./component-base
+	./api
+	./iam-sdk-go
+	./log
+	./test
+)

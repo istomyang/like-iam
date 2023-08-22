@@ -1,0 +1,11 @@
+api-version: v1
+auth-info:
+  username: admin
+  password: admin
+server-info:
+  timeout-ms: 1000
+  max-retries: 4
+  retry-duration-ms: 2000
+  address: 127.0.0.1
+  use-tls: false
+  skip-tls-verify: true

@@ -1,0 +1,32 @@
+[package]
+name = "iam-sdk-rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+default = ["iam", "iam_v1"]
+
+iam=[]
+tms=[]
+
+# chain is like System::Service::V1::User::Create().
+chain = []
+# tradition is like filling a form required for this request, and send to lower layer system to do building and send this request.
+tradition = []
+
+iam_v1=[]
+iam_v2=[]
+
+__tls = []
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+chrono = "0.4"
+clap = {version = "4.1.4"}
+serde_yaml = "0.9.17"
+async-trait = "0.1.63"
